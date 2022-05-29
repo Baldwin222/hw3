@@ -1,0 +1,36 @@
+package ge.ufc.main;
+
+public class Rectangle {
+
+        private int length;
+        private int width;
+
+        public void SetLength ( int length){
+        this.length = length;
+
+    }
+        public void SetWidth ( int width){
+        this.width = width;
+
+    }
+        public int GetLength () {
+        return this.length;
+    }
+        public int GetWidth () {
+        return this.width;
+    }
+        protected int Perimeter () {
+        return (this.length + this.width) * 2;
+    }
+        protected int Area () {
+        return (this.width * this.length);
+    }
+public int compareAr(Rectangle rec){
+
+            if(this.Area()>rec.Area())return 1;
+            else if (this.Area()<rec.Area())return -1;
+            else return 0;
+}
+
+
+}
